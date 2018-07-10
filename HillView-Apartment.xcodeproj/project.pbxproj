@@ -3,25 +3,37 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C7CA798A20F4FF41007CF155 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CA798920F4FF41007CF155 /* AppDelegate.swift */; };
 		C7CA798C20F4FF41007CF155 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CA798B20F4FF41007CF155 /* ViewController.swift */; };
 		C7CA798F20F4FF41007CF155 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7CA798D20F4FF41007CF155 /* Main.storyboard */; };
 		C7CA799120F4FF43007CF155 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7CA799020F4FF43007CF155 /* Assets.xcassets */; };
 		C7CA799420F4FF43007CF155 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7CA799220F4FF43007CF155 /* LaunchScreen.storyboard */; };
+		C7CA799C20F4FFFA007CF155 /* ViewControllerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CA799B20F4FFFA007CF155 /* ViewControllerTableViewCell.swift */; };
+		C7CA799E20F501B1007CF155 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CA799D20F501B0007CF155 /* Menu.swift */; };
+		C7CA79A020F502F4007CF155 /* captainamerica.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C7CA799F20F502F4007CF155 /* captainamerica.jpeg */; };
+		C7CA79A220F503C0007CF155 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CA79A120F503C0007CF155 /* AppDelegate.swift */; };
+		C7CA79A420F50693007CF155 /* MenuItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CA79A320F50693007CF155 /* MenuItems.swift */; };
+		FE25F0A7AEDE21788DBF0DD2 /* Pods_HillView_Apartment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D980BB56F3C2E54095863D47 /* Pods_HillView_Apartment.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C7CA798620F4FF41007CF155 /* Hill View Apartment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hill View Apartment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C7CA798920F4FF41007CF155 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C7CA798620F4FF41007CF155 /* HillView-Apartment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HillView-Apartment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7CA798B20F4FF41007CF155 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C7CA798E20F4FF41007CF155 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C7CA799020F4FF43007CF155 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C7CA799320F4FF43007CF155 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C7CA799520F4FF43007CF155 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7CA799B20F4FFFA007CF155 /* ViewControllerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerTableViewCell.swift; sourceTree = "<group>"; };
+		C7CA799D20F501B0007CF155 /* Menu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		C7CA799F20F502F4007CF155 /* captainamerica.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = captainamerica.jpeg; sourceTree = "<group>"; };
+		C7CA79A120F503C0007CF155 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C7CA79A320F50693007CF155 /* MenuItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItems.swift; sourceTree = "<group>"; };
+		D980BB56F3C2E54095863D47 /* Pods_HillView_Apartment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HillView_Apartment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3307246E7D4F2DE19CBB88C /* Pods-HillView-Apartment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HillView-Apartment.release.xcconfig"; path = "Pods/Target Support Files/Pods-HillView-Apartment/Pods-HillView-Apartment.release.xcconfig"; sourceTree = "<group>"; };
+		F2462D8A2CB1EBAFA72C3536 /* Pods-HillView-Apartment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HillView-Apartment.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HillView-Apartment/Pods-HillView-Apartment.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,59 +41,86 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE25F0A7AEDE21788DBF0DD2 /* Pods_HillView_Apartment.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F514526D2C8FCF8D7AEAFFD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D980BB56F3C2E54095863D47 /* Pods_HillView_Apartment.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3E843B876CB5FD8CB58A7571 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F2462D8A2CB1EBAFA72C3536 /* Pods-HillView-Apartment.debug.xcconfig */,
+				E3307246E7D4F2DE19CBB88C /* Pods-HillView-Apartment.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C7CA797D20F4FF41007CF155 = {
 			isa = PBXGroup;
 			children = (
-				C7CA798820F4FF41007CF155 /* Hill View Apartment */,
+				C7CA798820F4FF41007CF155 /* HillView-Apartment */,
 				C7CA798720F4FF41007CF155 /* Products */,
+				3E843B876CB5FD8CB58A7571 /* Pods */,
+				2F514526D2C8FCF8D7AEAFFD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		C7CA798720F4FF41007CF155 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C7CA798620F4FF41007CF155 /* Hill View Apartment.app */,
+				C7CA798620F4FF41007CF155 /* HillView-Apartment.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C7CA798820F4FF41007CF155 /* Hill View Apartment */ = {
+		C7CA798820F4FF41007CF155 /* HillView-Apartment */ = {
 			isa = PBXGroup;
 			children = (
-				C7CA798920F4FF41007CF155 /* AppDelegate.swift */,
+				C7CA799F20F502F4007CF155 /* captainamerica.jpeg */,
 				C7CA798B20F4FF41007CF155 /* ViewController.swift */,
+				C7CA799B20F4FFFA007CF155 /* ViewControllerTableViewCell.swift */,
+				C7CA79A120F503C0007CF155 /* AppDelegate.swift */,
+				C7CA799D20F501B0007CF155 /* Menu.swift */,
 				C7CA798D20F4FF41007CF155 /* Main.storyboard */,
 				C7CA799020F4FF43007CF155 /* Assets.xcassets */,
 				C7CA799220F4FF43007CF155 /* LaunchScreen.storyboard */,
 				C7CA799520F4FF43007CF155 /* Info.plist */,
+				C7CA79A320F50693007CF155 /* MenuItems.swift */,
 			);
-			path = "Hill View Apartment";
+			path = "HillView-Apartment";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C7CA798520F4FF41007CF155 /* Hill View Apartment */ = {
+		C7CA798520F4FF41007CF155 /* HillView-Apartment */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C7CA799820F4FF43007CF155 /* Build configuration list for PBXNativeTarget "Hill View Apartment" */;
+			buildConfigurationList = C7CA799820F4FF43007CF155 /* Build configuration list for PBXNativeTarget "HillView-Apartment" */;
 			buildPhases = (
+				EB92C71D6C188D29E374D5AA /* [CP] Check Pods Manifest.lock */,
 				C7CA798220F4FF41007CF155 /* Sources */,
 				C7CA798320F4FF41007CF155 /* Frameworks */,
 				C7CA798420F4FF41007CF155 /* Resources */,
+				D90FE94EC1EDDB3AE42333FD /* [CP] Embed Pods Frameworks */,
+				19D8842C087AFE5066929FC5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Hill View Apartment";
+			name = "HillView-Apartment";
 			productName = "Hill View Apartment";
-			productReference = C7CA798620F4FF41007CF155 /* Hill View Apartment.app */;
+			productReference = C7CA798620F4FF41007CF155 /* HillView-Apartment.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -96,11 +135,12 @@
 				TargetAttributes = {
 					C7CA798520F4FF41007CF155 = {
 						CreatedOnToolsVersion = 9.4.1;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
-			buildConfigurationList = C7CA798120F4FF41007CF155 /* Build configuration list for PBXProject "Hill View Apartment" */;
-			compatibilityVersion = "Xcode 9.3";
+			buildConfigurationList = C7CA798120F4FF41007CF155 /* Build configuration list for PBXProject "HillView-Apartment" */;
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -112,7 +152,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C7CA798520F4FF41007CF155 /* Hill View Apartment */,
+				C7CA798520F4FF41007CF155 /* HillView-Apartment */,
 			);
 		};
 /* End PBXProject section */
@@ -123,6 +163,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7CA799420F4FF43007CF155 /* LaunchScreen.storyboard in Resources */,
+				C7CA79A020F502F4007CF155 /* captainamerica.jpeg in Resources */,
 				C7CA799120F4FF43007CF155 /* Assets.xcassets in Resources */,
 				C7CA798F20F4FF41007CF155 /* Main.storyboard in Resources */,
 			);
@@ -130,13 +171,72 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		19D8842C087AFE5066929FC5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HillView-Apartment/Pods-HillView-Apartment-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D90FE94EC1EDDB3AE42333FD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HillView-Apartment/Pods-HillView-Apartment-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HillView-Apartment/Pods-HillView-Apartment-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB92C71D6C188D29E374D5AA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HillView-Apartment-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C7CA798220F4FF41007CF155 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7CA79A220F503C0007CF155 /* AppDelegate.swift in Sources */,
 				C7CA798C20F4FF41007CF155 /* ViewController.swift in Sources */,
-				C7CA798A20F4FF41007CF155 /* AppDelegate.swift in Sources */,
+				C7CA79A420F50693007CF155 /* MenuItems.swift in Sources */,
+				C7CA799C20F4FFFA007CF155 /* ViewControllerTableViewCell.swift in Sources */,
+				C7CA799E20F501B1007CF155 /* Menu.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,25 +370,24 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		C7CA799920F4FF43007CF155 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2462D8A2CB1EBAFA72C3536 /* Pods-HillView-Apartment.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = TN6YQNGLXP;
-				INFOPLIST_FILE = "Hill View Apartment/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ibm.Hill-View-Apartment";
+				INFOPLIST_FILE = "HillView-Apartment/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mfp.sdk.push;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "402a3ea1-cdf3-4050-9bd2-d4bc740cb610";
+				PROVISIONING_PROFILE_SPECIFIER = "MFP SDK Push Vittal";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -296,17 +395,17 @@
 		};
 		C7CA799A20F4FF43007CF155 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3307246E7D4F2DE19CBB88C /* Pods-HillView-Apartment.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = TN6YQNGLXP;
-				INFOPLIST_FILE = "Hill View Apartment/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ibm.Hill-View-Apartment";
+				INFOPLIST_FILE = "HillView-Apartment/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mfp.sdk.push;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "402a3ea1-cdf3-4050-9bd2-d4bc740cb610";
+				PROVISIONING_PROFILE_SPECIFIER = "MFP SDK Push Vittal";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -315,7 +414,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C7CA798120F4FF41007CF155 /* Build configuration list for PBXProject "Hill View Apartment" */ = {
+		C7CA798120F4FF41007CF155 /* Build configuration list for PBXProject "HillView-Apartment" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C7CA799620F4FF43007CF155 /* Debug */,
@@ -324,7 +423,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C7CA799820F4FF43007CF155 /* Build configuration list for PBXNativeTarget "Hill View Apartment" */ = {
+		C7CA799820F4FF43007CF155 /* Build configuration list for PBXNativeTarget "HillView-Apartment" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C7CA799920F4FF43007CF155 /* Debug */,

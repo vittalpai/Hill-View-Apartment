@@ -12,10 +12,17 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    static var heroes = [Menu]()
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        AppDelegate.heroes.append(Menu(
+            name: "vittal",
+            team: "This is a sample description",
+            image: "captainamerica.jpeg"
+        ))
         return true
     }
 
