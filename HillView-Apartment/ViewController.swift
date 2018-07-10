@@ -25,7 +25,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     //the method returning size of the list
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
-        return AppDelegate.heroes.count
+        return MenuItems.menu.count
     }
     
     
@@ -35,30 +35,30 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ViewControllerTableViewCell
         
         //getting the hero for the specified position
-        let hero: Menu
-        hero = AppDelegate.heroes[indexPath.row]
+        let menu: Menu
+        menu =  MenuItems.menu[indexPath.row]
         
         //displaying values
-        cell.labelName.text = hero.name
-        cell.labelTeam.text = hero.team
+        cell.labelName.text = menu.name
+        cell.labelTeam.text = menu.team
         
-        cell.heroImage.image = UIImage(named: hero.image!)
+       // cell.heroImage.image = AppDelegate.image
         //displaying image
-//        Alamofire.request(hero.imageUrl!).responseImage { response in
-//            debugPrint(response)
-//
-//            if let image = response.result.value {
-//                cell.heroImage.image = image
-//            }
-//        }
-//
+        Alamofire.request("https://dl.dropboxusercontent.com/s/mru9qumcme99ucs/test.jpg").responseImage { response in
+            debugPrint(response)
+
+            if let image = response.result.value {
+                cell.heroImage.image = image
+            }
+        }
+
         return cell
     }
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.registerBMSPush()
         
 //        //fetching data from web api
 //        Alamofire.request(URL_GET_DATA).responseJSON { response in
@@ -96,6 +96,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     
     
 }

@@ -5,4 +5,7 @@ target 'HillView-Apartment' do
 use_frameworks!
 pod 'Alamofire', '~> 4.4'
 pod 'AlamofireImage', '~> 3.1'
+pod 'SwiftCloudant'
+pod 'BMSPush'
+pod 'BMSCore'
 end

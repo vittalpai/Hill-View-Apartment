@@ -2,15 +2,28 @@ PODS:
   - Alamofire (4.7.3)
   - AlamofireImage (3.3.1):
     - Alamofire (~> 4.5)
+  - BMSAnalyticsAPI (2.2.3)
+  - BMSCore (2.3.5):
+    - BMSAnalyticsAPI (~> 2.2)
+  - BMSPush (3.3.2):
+    - BMSCore (~> 2.0)
+  - SwiftCloudant (0.8.0)
 
 DEPENDENCIES:
   - Alamofire (~> 4.4)
   - AlamofireImage (~> 3.1)
+  - BMSCore
+  - BMSPush
+  - SwiftCloudant
 
 SPEC CHECKSUMS:
   Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
   AlamofireImage: 3b35b586853abaf94ca1250f4e94cff3c21a4c0d
+  BMSAnalyticsAPI: d259379069bb11d2ff365bf5b796a2677dfc3849
+  BMSCore: 446c16a7dbe14b5019751617a00dd947c65cca82
+  BMSPush: 14b286eb476c45d20f4f14c644495bba446c331d
+  SwiftCloudant: 613406bf184d0512b5fac245e75d51f88f811b9a
 
-PODFILE CHECKSUM: 3e8fb623ffde6bad129361e00240204995e4dd6a
+PODFILE CHECKSUM: 4800a7e1fdab51ea0e98ff61b97cde054a6a5f33
 
 COCOAPODS: 1.3.1

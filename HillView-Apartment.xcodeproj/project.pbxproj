@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C7C510F720F5287900DD014A /* BMSPush.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C510F620F5287900DD014A /* BMSPush.swift */; };
 		C7CA798C20F4FF41007CF155 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CA798B20F4FF41007CF155 /* ViewController.swift */; };
 		C7CA798F20F4FF41007CF155 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7CA798D20F4FF41007CF155 /* Main.storyboard */; };
 		C7CA799120F4FF43007CF155 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7CA799020F4FF43007CF155 /* Assets.xcassets */; };
@@ -16,10 +17,13 @@
 		C7CA79A020F502F4007CF155 /* captainamerica.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C7CA799F20F502F4007CF155 /* captainamerica.jpeg */; };
 		C7CA79A220F503C0007CF155 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CA79A120F503C0007CF155 /* AppDelegate.swift */; };
 		C7CA79A420F50693007CF155 /* MenuItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CA79A320F50693007CF155 /* MenuItems.swift */; };
+		C7CA79A820F50A82007CF155 /* CloundantAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CA79A720F50A82007CF155 /* CloundantAdapter.swift */; };
 		FE25F0A7AEDE21788DBF0DD2 /* Pods_HillView_Apartment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D980BB56F3C2E54095863D47 /* Pods_HillView_Apartment.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C7C510F620F5287900DD014A /* BMSPush.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMSPush.swift; sourceTree = "<group>"; };
+		C7C510FA20F52D0D00DD014A /* HillView-Apartment.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "HillView-Apartment.entitlements"; sourceTree = "<group>"; };
 		C7CA798620F4FF41007CF155 /* HillView-Apartment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HillView-Apartment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7CA798B20F4FF41007CF155 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C7CA798E20F4FF41007CF155 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -31,6 +35,7 @@
 		C7CA799F20F502F4007CF155 /* captainamerica.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = captainamerica.jpeg; sourceTree = "<group>"; };
 		C7CA79A120F503C0007CF155 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7CA79A320F50693007CF155 /* MenuItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItems.swift; sourceTree = "<group>"; };
+		C7CA79A720F50A82007CF155 /* CloundantAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloundantAdapter.swift; sourceTree = "<group>"; };
 		D980BB56F3C2E54095863D47 /* Pods_HillView_Apartment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HillView_Apartment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3307246E7D4F2DE19CBB88C /* Pods-HillView-Apartment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HillView-Apartment.release.xcconfig"; path = "Pods/Target Support Files/Pods-HillView-Apartment/Pods-HillView-Apartment.release.xcconfig"; sourceTree = "<group>"; };
 		F2462D8A2CB1EBAFA72C3536 /* Pods-HillView-Apartment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HillView-Apartment.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HillView-Apartment/Pods-HillView-Apartment.debug.xcconfig"; sourceTree = "<group>"; };
@@ -86,16 +91,19 @@
 		C7CA798820F4FF41007CF155 /* HillView-Apartment */ = {
 			isa = PBXGroup;
 			children = (
+				C7C510FA20F52D0D00DD014A /* HillView-Apartment.entitlements */,
 				C7CA799F20F502F4007CF155 /* captainamerica.jpeg */,
 				C7CA798B20F4FF41007CF155 /* ViewController.swift */,
+				C7C510F620F5287900DD014A /* BMSPush.swift */,
 				C7CA799B20F4FFFA007CF155 /* ViewControllerTableViewCell.swift */,
+				C7CA79A720F50A82007CF155 /* CloundantAdapter.swift */,
 				C7CA79A120F503C0007CF155 /* AppDelegate.swift */,
 				C7CA799D20F501B0007CF155 /* Menu.swift */,
+				C7CA79A320F50693007CF155 /* MenuItems.swift */,
 				C7CA798D20F4FF41007CF155 /* Main.storyboard */,
 				C7CA799020F4FF43007CF155 /* Assets.xcassets */,
 				C7CA799220F4FF43007CF155 /* LaunchScreen.storyboard */,
 				C7CA799520F4FF43007CF155 /* Info.plist */,
-				C7CA79A320F50693007CF155 /* MenuItems.swift */,
 			);
 			path = "HillView-Apartment";
 			sourceTree = "<group>";
@@ -136,6 +144,11 @@
 					C7CA798520F4FF41007CF155 = {
 						CreatedOnToolsVersion = 9.4.1;
 						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -196,11 +209,19 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-HillView-Apartment/Pods-HillView-Apartment-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/BMSAnalyticsAPI/BMSAnalyticsAPI.framework",
+				"${BUILT_PRODUCTS_DIR}/BMSCore/BMSCore.framework",
+				"${BUILT_PRODUCTS_DIR}/BMSPush/BMSPush.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftCloudant/SwiftCloudant.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BMSAnalyticsAPI.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BMSCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BMSPush.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftCloudant.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -232,11 +253,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7CA79A820F50A82007CF155 /* CloundantAdapter.swift in Sources */,
 				C7CA79A220F503C0007CF155 /* AppDelegate.swift in Sources */,
 				C7CA798C20F4FF41007CF155 /* ViewController.swift in Sources */,
 				C7CA79A420F50693007CF155 /* MenuItems.swift in Sources */,
 				C7CA799C20F4FFFA007CF155 /* ViewControllerTableViewCell.swift in Sources */,
 				C7CA799E20F501B1007CF155 /* Menu.swift in Sources */,
+				C7C510F720F5287900DD014A /* BMSPush.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,6 +403,7 @@
 			baseConfigurationReference = F2462D8A2CB1EBAFA72C3536 /* Pods-HillView-Apartment.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "HillView-Apartment/HillView-Apartment.entitlements";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = TN6YQNGLXP;
 				INFOPLIST_FILE = "HillView-Apartment/Info.plist";
@@ -398,6 +422,7 @@
 			baseConfigurationReference = E3307246E7D4F2DE19CBB88C /* Pods-HillView-Apartment.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "HillView-Apartment/HillView-Apartment.entitlements";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = TN6YQNGLXP;
 				INFOPLIST_FILE = "HillView-Apartment/Info.plist";
