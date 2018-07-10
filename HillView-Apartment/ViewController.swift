@@ -9,6 +9,9 @@
 import UIKit
 import Alamofire
 import AlamofireImage
+import TextToSpeechV1
+import AVFoundation
+
 
 
 //adding class DataSource and Delegate for our TableView
@@ -20,7 +23,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     //our table view
     @IBOutlet weak var tableViewHeroes: UITableView!
     
-    //a list to store heroes
+    
+
 
     
     //the method returning size of the list
@@ -44,9 +48,11 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
        // cell.heroImage.image = AppDelegate.image
         //displaying image
+      
+        URLCache.shared.removeAllCachedResponses()
         Alamofire.request("https://dl.dropboxusercontent.com/s/mru9qumcme99ucs/test.jpg").responseImage { response in
             debugPrint(response)
-
+            
             if let image = response.result.value {
                 cell.heroImage.image = image
             }
@@ -54,6 +60,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
         return cell
     }
+    
     
     
     override func viewDidLoad() {
@@ -97,6 +104,24 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         // Dispose of any resources that can be recreated.
     }
     
+    func playAudio() {
+        // Text to Speech service object
+        var textToSpeech = TextToSpeech(
+            username: "asdfsa",
+            password: "ASDfas")
+        
+        // Audio player for playing synthesized text
+        var audioPlayer = AVAudioPlayer()
+        let text = "your-text-here"
+        let accept = "audio/wav"
+        let voice = "en-US_LisaVoice"
+        let failure = { (error: Error) in print(error) }
+        textToSpeech.synthesize(text: text, accept: accept, voice: voice, failure: failure) { data in
+            audioPlayer = try! AVAudioPlayer(data: data)
+            audioPlayer.prepareToPlay()
+            audioPlayer.play()
+        }
+    }
     
     
 }

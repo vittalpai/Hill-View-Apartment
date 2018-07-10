@@ -8,11 +8,17 @@
 
 import UIKit
 
+
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     static var image:UIImage? = nil
+    
+
+
+
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
@@ -71,6 +77,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window!.rootViewController?.present(alertDialog, animated: true, completion: nil)
     }
+    
+ 
+//        // Synthesize the text
+//        let failure = { (error: Error) in print(error) }
+//        let voice = "en-US_LisaVoice"
+//        textToSpeech.synthesize(
+//            text: "afssadfdasfdasfdsa",
+//            accept: .wav,
+//            voice: voice,
+//            failure: failure)
+//        {
+//            data in
+//            do {
+//                self.player = try AVAudioPlayer(data: data)
+//                self.player!.play()
+//            } catch {
+//                print("Failed to create audio player.")
+//            }
+//        }
+//    }
+
+
 
 
 }

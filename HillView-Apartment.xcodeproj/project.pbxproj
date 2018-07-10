@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		C7C510F720F5287900DD014A /* BMSPush.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C510F620F5287900DD014A /* BMSPush.swift */; };
+		C7C510FD20F5370E00DD014A /* TextToSpeechV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7C510FB20F5365900DD014A /* TextToSpeechV1.framework */; };
+		C7C510FE20F5370E00DD014A /* TextToSpeechV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C7C510FB20F5365900DD014A /* TextToSpeechV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C7CA798C20F4FF41007CF155 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CA798B20F4FF41007CF155 /* ViewController.swift */; };
 		C7CA798F20F4FF41007CF155 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7CA798D20F4FF41007CF155 /* Main.storyboard */; };
 		C7CA799120F4FF43007CF155 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7CA799020F4FF43007CF155 /* Assets.xcassets */; };
@@ -21,9 +23,24 @@
 		FE25F0A7AEDE21788DBF0DD2 /* Pods_HillView_Apartment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D980BB56F3C2E54095863D47 /* Pods_HillView_Apartment.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		C7C510FF20F5370E00DD014A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C7C510FE20F5370E00DD014A /* TextToSpeechV1.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		C7C510F620F5287900DD014A /* BMSPush.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMSPush.swift; sourceTree = "<group>"; };
 		C7C510FA20F52D0D00DD014A /* HillView-Apartment.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "HillView-Apartment.entitlements"; sourceTree = "<group>"; };
+		C7C510FB20F5365900DD014A /* TextToSpeechV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TextToSpeechV1.framework; path = "HillView-Apartment/TextToSpeechV1.framework"; sourceTree = SOURCE_ROOT; };
 		C7CA798620F4FF41007CF155 /* HillView-Apartment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HillView-Apartment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7CA798B20F4FF41007CF155 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C7CA798E20F4FF41007CF155 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -47,6 +64,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE25F0A7AEDE21788DBF0DD2 /* Pods_HillView_Apartment.framework in Frameworks */,
+				C7C510FD20F5370E00DD014A /* TextToSpeechV1.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +109,7 @@
 		C7CA798820F4FF41007CF155 /* HillView-Apartment */ = {
 			isa = PBXGroup;
 			children = (
+				C7C510FB20F5365900DD014A /* TextToSpeechV1.framework */,
 				C7C510FA20F52D0D00DD014A /* HillView-Apartment.entitlements */,
 				C7CA799F20F502F4007CF155 /* captainamerica.jpeg */,
 				C7CA798B20F4FF41007CF155 /* ViewController.swift */,
@@ -121,6 +140,7 @@
 				C7CA798420F4FF41007CF155 /* Resources */,
 				D90FE94EC1EDDB3AE42333FD /* [CP] Embed Pods Frameworks */,
 				19D8842C087AFE5066929FC5 /* [CP] Copy Pods Resources */,
+				C7C510FF20F5370E00DD014A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -406,6 +426,11 @@
 				CODE_SIGN_ENTITLEMENTS = "HillView-Apartment/HillView-Apartment.entitlements";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = TN6YQNGLXP;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/HillView-Apartment",
+				);
 				INFOPLIST_FILE = "HillView-Apartment/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mfp.sdk.push;
@@ -425,6 +450,11 @@
 				CODE_SIGN_ENTITLEMENTS = "HillView-Apartment/HillView-Apartment.entitlements";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = TN6YQNGLXP;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/HillView-Apartment",
+				);
 				INFOPLIST_FILE = "HillView-Apartment/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mfp.sdk.push;
