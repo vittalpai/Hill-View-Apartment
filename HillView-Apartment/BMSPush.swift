@@ -18,9 +18,9 @@ let push =  BMSPushClient.sharedInstance
 let cloudRegion = BMSClient.Region.usSouth
 let pushAppGUID = "64bc3b3b-cfce-4b1b-85bf-f9ac2d431b75"
 let pushClientSecret = "27843a9f-eb49-46c7-8320-1420411950a3"
-let userId = "vittal"
-let customeDeviceId = "12345"
-let pushVariables = ["username":"vittal","accountNumber":"3564758697057869"]
+let userId = "asdas"
+let customeDeviceId = "asdas"
+let pushVariables = ["username":"asd","accountNumber":"asdsa"]
 
 var tagsArray:[String] = []
 
@@ -64,12 +64,28 @@ extension ViewController : BMSPushObserver {
     
     static func didReciveNotification(userInfo: [AnyHashable: Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
         
+        if let notification = userInfo["aps"] as? NSDictionary,
+            let alert = notification["alert"] as? NSDictionary,
+            let body = alert["body"] as? String {
+            if let topVC: ViewController = UIApplication.getTopMostViewController() as! ViewController {
+                topVC.playAudio(message: body)
+            }
+        }
+        
+      
+
         push.didReciveBMSPushNotification(userInfo: userInfo) { (response, error) in
             
             DispatchQueue.main.async(execute: {})
             completionHandler(.noData)
         }
         
+    }
+    
+    static func vittal() {
+        if let topVC:ViewController = UIApplication.getTopMostViewController() as! ViewController {
+            topVC.playAudio(message: "asdfdsafds")
+        }
     }
     
     

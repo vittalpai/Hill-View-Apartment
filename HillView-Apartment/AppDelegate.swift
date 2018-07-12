@@ -24,6 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         MenuItems.addMenuItems()
+       
 //        CloudantAdapter.sharedInstance.getDocument { (data) in
 //         //   print(data)
 //            
@@ -63,18 +64,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
-        if let notification = userInfo["aps"] as? NSDictionary,
-            let alert = notification["alert"] as? NSDictionary,
-            let body = alert["body"] as? String {
-            showAlert(body)
-        }
         ViewController.didReciveNotification(userInfo: userInfo, fetchCompletionHandler: completionHandler)
     }
     
     func showAlert(_ message: String) {
         let alertDialog = UIAlertController(title: "Push Notification", message: message, preferredStyle: UIAlertControllerStyle.alert)
         alertDialog.addAction(UIAlertAction(title: "Okay", style: UIAlertActionStyle.default, handler: nil))
-        
+
         window!.rootViewController?.present(alertDialog, animated: true, completion: nil)
     }
     
@@ -98,8 +94,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        }
 //    }
 
+    
+    
 
 
 
 }
+
+
 

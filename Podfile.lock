@@ -7,6 +7,9 @@ PODS:
     - BMSAnalyticsAPI (~> 2.2)
   - BMSPush (3.3.2):
     - BMSCore (~> 2.0)
+  - DynamicBlurView (2.0.2)
+  - PopupDialog (0.7.1):
+    - DynamicBlurView (~> 2.0)
   - SwiftCloudant (0.8.0)
 
 DEPENDENCIES:
@@ -14,6 +17,7 @@ DEPENDENCIES:
   - AlamofireImage (~> 3.1)
   - BMSCore
   - BMSPush
+  - PopupDialog
   - SwiftCloudant
 
 SPEC CHECKSUMS:
@@ -22,8 +26,10 @@ SPEC CHECKSUMS:
   BMSAnalyticsAPI: d259379069bb11d2ff365bf5b796a2677dfc3849
   BMSCore: 446c16a7dbe14b5019751617a00dd947c65cca82
   BMSPush: 14b286eb476c45d20f4f14c644495bba446c331d
+  DynamicBlurView: aa6db4defc6e537eb86fc5e58dd3991666178399
+  PopupDialog: 39598b7d41719f5c025b4b70e62728bae7734fef
   SwiftCloudant: 613406bf184d0512b5fac245e75d51f88f811b9a
 
-PODFILE CHECKSUM: 4800a7e1fdab51ea0e98ff61b97cde054a6a5f33
+PODFILE CHECKSUM: c809acb768d8d3d890dfff421a19a2bcb11bb8aa
 
 COCOAPODS: 1.3.1

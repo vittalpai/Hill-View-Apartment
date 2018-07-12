@@ -8,4 +8,5 @@ pod 'AlamofireImage', '~> 3.1'
 pod 'SwiftCloudant'
 pod 'BMSPush'
 pod 'BMSCore'
+pod 'PopupDialog'
 end

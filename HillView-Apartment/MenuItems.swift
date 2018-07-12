@@ -17,10 +17,10 @@ internal class MenuItems:NSObject  {
 
 
     class func addMenuItems() -> Void {
-        addItem("vittal", "sample description", "captainamerica.jpeg")
-         addItem("vittal", "sample description", "captainamerica.jpeg")
-         addItem("vittal", "sample description", "captainamerica.jpeg")
-         addItem("vittal", "sample description", "captainamerica.jpeg")
+        addItem("Pay Bills", "Pay your bills with one click", "pay-bills.png")
+        addItem("Live Feeds", "Live feeds of your vehicle", "live.png")
+        addItem("Chat", "Chat with Soceity ", "chat.png")
+        addItem("Help", "Inform Corporation asdfadsfdsa", "help.jpeg")
     }
     
     class func addItem(_ name:String,_ team:String,_ image: String) -> Void {

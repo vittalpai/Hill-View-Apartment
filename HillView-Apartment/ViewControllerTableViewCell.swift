@@ -1,10 +1,11 @@
 //
 //  ViewControllerTableViewCell.swift
-//  CustomTableView
+//  Hill View Apartment
 //
-//  Created by Belal Khan on 30/07/17.
-//  Copyright © 2017 Belal Khan. All rights reserved.
+//  Created by Vittal Pai on 7/10/18.
+//  Copyright © 2018 Vittal Pai. All rights reserved.
 //
+
 
 import UIKit
 

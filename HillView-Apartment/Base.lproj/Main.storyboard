@@ -29,7 +29,7 @@
         <!--HillView-Apartment-->
         <scene sceneID="btl-0e-d0x">
             <objects>
-                <viewController title="HillView-Apartment" id="W68-on-UPX" customClass="ViewController" customModule="HillView_Apartment" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" title="HillView-Apartment" useStoryboardIdentifierAsRestorationIdentifier="YES" id="W68-on-UPX" customClass="ViewController" customModule="HillView_Apartment" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fM1-Ja-sTN"/>
                         <viewControllerLayoutGuide type="bottom" id="euL-MI-zjH"/>
@@ -43,7 +43,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="260" id="Il5-VI-Aer" customClass="ViewControllerTableViewCell" customModule="HillView_Apartment" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="260" id="Il5-VI-Aer" customClass="ViewControllerTableViewCell" customModule="HillView_Apartment" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="342" height="260"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Il5-VI-Aer" id="8yZ-Tr-bEG">
@@ -86,14 +86,44 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="XF7-Jf-bMp"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Hill View Apartment" id="duF-YN-Qm4"/>
+                    <navigationItem key="navigationItem" title="COC Enclave" id="duF-YN-Qm4"/>
                     <connections>
                         <outlet property="tableViewHeroes" destination="Jak-UM-mVw" id="wkD-e8-l9r"/>
+                        <segue destination="2pL-hb-5me" kind="show" identifier="navigateLiveFeed" id="H6B-eP-RgS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gUz-FL-vJu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-79.200000000000003" y="138.98050974512745"/>
+        </scene>
+        <!--Live Feed-->
+        <scene sceneID="Yqe-Xe-7Ka">
+            <objects>
+                <viewController storyboardIdentifier="LiveFeedViewController" title="Live Feed" useStoryboardIdentifierAsRestorationIdentifier="YES" id="2pL-hb-5me" customClass="LiveFeedViewController" customModule="HillView_Apartment" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vHE-BO-UtF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="T6P-OZ-Ug8">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="T6P-OZ-Ug8" secondAttribute="trailing" id="XfE-q1-36P"/>
+                            <constraint firstItem="T6P-OZ-Ug8" firstAttribute="bottom" secondItem="0VV-YN-a37" secondAttribute="bottom" id="g05-Rg-je2"/>
+                            <constraint firstItem="T6P-OZ-Ug8" firstAttribute="top" secondItem="0VV-YN-a37" secondAttribute="top" id="pQO-bW-S7X"/>
+                            <constraint firstItem="T6P-OZ-Ug8" firstAttribute="leading" secondItem="vHE-BO-UtF" secondAttribute="leading" id="yuT-CL-Cly"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="0VV-YN-a37"/>
+                    </view>
+                    <connections>
+                        <outlet property="liveFeedImage" destination="T6P-OZ-Ug8" id="YmA-9w-mmd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p8H-Gb-74C" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1162.4000000000001" y="158.77061469265368"/>
         </scene>
     </scenes>
 </document>
